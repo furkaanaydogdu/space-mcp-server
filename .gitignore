@@ -1,0 +1,60 @@
+# MCP repo: Python MCP server; the index and model are baked into the image at build time
+
+# Secrets and local configuration (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+*-credentials.json
+.secrets/
+*.token
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local AI-tool settings (personal, not shared)
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Logs and scratch
+*.log
+tmp/
+.tmp/
+
+# Archive index and model files must never be committed (the index is private)
+# Persisted index files (LlamaIndex default names) and FAISS files
+*.faiss
+docstore.json
+index_store.json
+graph_store.json
+default__vector_store.json
+image__vector_store.json
+# Local copies of a downloaded index release, model weights and caches
+/data/
+/index-data/
+/models/
+.cache/
