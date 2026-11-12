@@ -1,6 +1,6 @@
 # ADR 0003: MCP tools return data only; the app owns presentation and wording
 
-- Status: Accepted
+- Status: Accepted; the exclusion list and the extra-result rule are superseded by [ADR 0004](0004-archive-search-and-lookup-by-id.md)
 - Date: 2026-10
 - Repo: mcp
 - Related: [App ADR 0004](../../app/adr/0004-code-owns-facts-model-owns-words.md), [App ADR 0011](../../app/adr/0011-one-api-contract-with-generated-types.md)
